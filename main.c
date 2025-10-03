@@ -37,6 +37,7 @@ void count_characters() {
     
     fprintf(outFile, "Digits: %d\n", digits);
     fprintf(outFile, "Special Characters: %d\n", special);
+    
     printf( "Letters: %d\n", letters);
     printf( "Digits: %d\n", digits);
     printf( "Special Characters: %d\n", special);
@@ -46,22 +47,31 @@ void count_characters() {
 }
 
 int main() {
-    int size;
+    
     int function;
-    scanf("%d", %function);
-    scanf("%d", &size);
+    scanf("%d", &function); // get the function
+    
     switch(function){
-        case 0:
+        case 0: // test only the array function
+            int size;
+            scanf("%d", &size);
             int* arr = (int*)malloc(size * sizeof(int);
             for(int i = 0; i< size; i++){
                 scanf("%d", (arr + i));
             }
             printf("%d", sum_array(arr, size));
             break;
-        case 1:
+        case 1: // test only the count characters function
             count_characters();
             break;
-        default: break;
+        default:  // test all of the functions
+            count_characters();
+            int* arr = (int*)malloc(size * sizeof(int);
+            for(int i = 0; i< size; i++){
+                scanf("%d", (arr + i));
+            };
+            printf("%d", sum_array(arr, size));
+            break;
     }
     return 0;  
         

@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int sum_array(int arr[], int n){
+    // implement this function!!
+    return 0;
+}
+
+
 void count_characters() {
+
+    
     FILE *inFile = fopen("input.txt", "r");
     FILE *outFile = fopen("output.txt", "w");
 
@@ -38,7 +46,23 @@ void count_characters() {
 }
 
 int main() {
-
-    count_characters();
-    return 0;
+    int size;
+    int function;
+    scanf("%d", %function);
+    scanf("%d", &size);
+    switch(function){
+        case 0:
+            int* arr = (int*)malloc(size * sizeof(int);
+            for(int i = 0; i< size; i++){
+                scanf("%d", (arr + i));
+            }
+            printf("%d", sum_array(arr, size));
+            break;
+        case 1:
+            count_characters();
+            break;
+        default: break;
+    }
+    return 0;  
+        
 }
